@@ -2,7 +2,7 @@
 
 ## Prerequisites
 
-To use the "Sync Figma variables to tokens" workflow, you must be a full member of an Enterprise org in Figma. To use the "Sync tokens to Figma" workflow, you must also have an editor seat.
+To use the "Sync Figma variables to tokens" workflow, you must be a full member of an Enterprise org in Figma. 
 
 Both workflows assume that you have a single Figma file with local variable collections, along with one or more tokens json files in the `tokens/` directory that adhere\* to the [draft W3C spec for Design Tokens](https://tr.designtokens.org/format/). For demonstration purposes, this directory contains the tokens exported from the [Get started with variables](https://www.figma.com/community/file/1253086684245880517/Get-started-with-variables) Community file. Have a copy of this file ready if you want to try out the workflow with these existing tokens.
 

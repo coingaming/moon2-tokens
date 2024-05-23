@@ -1,10 +1,10 @@
-import 'dotenv/config'
-import * as fs from 'fs'
+import "dotenv/config";
+import * as fs from "fs";
 
-import FigmaApi from './figma_api.js'
+import FigmaApi from "./figma_api.js";
 
-import { green } from './utils.js'
-import { tokenFilesFromLocalVariables } from './token_export.js'
+import { green } from "./utils.js";
+import { tokenFilesFromLocalVariables } from "./token_export.js";
 
 /**
  * Usage:
@@ -17,32 +17,45 @@ import { tokenFilesFromLocalVariables } from './token_export.js'
  */
 
 async function main() {
-  if (!process.env.PERSONAL_ACCESS_TOKEN || !process.env.FILE_KEY) {
-    throw new Error('PERSONAL_ACCESS_TOKEN and FILE_KEY environemnt variables are required')
+  if (!process.env.PERSONAL_ACCESS_TOKEN || !process.env.PROJECT_KEY) {
+    throw new Error(
+      "PERSONAL_ACCESS_TOKEN and PROJECT_KEY environment variables are required"
+    );
   }
-  const fileKey = process.env.FILE_KEY
+  const projectKey = process.env.PROJECT_KEY;
 
-  const api = new FigmaApi(process.env.PERSONAL_ACCESS_TOKEN)
-  const localVariables = await api.getLocalVariables(fileKey)
+  const api = new FigmaApi(process.env.PERSONAL_ACCESS_TOKEN);
+  const projectFiles = await api.getProjectFiles(projectKey);
 
-  const tokensFiles = tokenFilesFromLocalVariables(localVariables)
+  const projectFileKeys = projectFiles.files.map((file) => file.key);
 
-  let outputDir = 'tokens_new'
-  const outputArgIdx = process.argv.indexOf('--output')
-  if (outputArgIdx !== -1) {
-    outputDir = process.argv[outputArgIdx + 1]
-  }
+  projectFileKeys.forEach(async (fileKey) => {
+    const localVariables = await api.getLocalVariables(fileKey);
 
-  if (!fs.existsSync(outputDir)) {
-    fs.mkdirSync(outputDir)
-  }
+    const tokensFiles = tokenFilesFromLocalVariables(localVariables);
 
-  Object.entries(tokensFiles).forEach(([fileName, fileContent]) => {
-    fs.writeFileSync(`${outputDir}/${fileName}`, JSON.stringify(fileContent, null, 2))
-    console.log(`Wrote ${fileName}`)
-  })
+    let outputDir = "tokens_new";
+    const outputArgIdx = process.argv.indexOf("--output");
+    if (outputArgIdx !== -1) {
+      outputDir = process.argv[outputArgIdx + 1];
+    }
 
-  console.log(green(`✅ Tokens files have been written to the ${outputDir} directory`))
+    if (!fs.existsSync(outputDir)) {
+      fs.mkdirSync(outputDir);
+    }
+
+    Object.entries(tokensFiles).forEach(([fileName, fileContent]) => {
+      fs.writeFileSync(
+        `${outputDir}/${fileName}`,
+        JSON.stringify(fileContent, null, 2)
+      );
+      console.log(`Wrote ${fileName}`);
+    });
+
+    console.log(
+      green(`✅ Tokens files have been written to the ${outputDir} directory`)
+    );
+  });
 }
 
-main()
+main();

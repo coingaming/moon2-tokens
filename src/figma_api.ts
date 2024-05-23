@@ -1,41 +1,38 @@
-import axios from 'axios'
+import axios from "axios";
 import {
   GetLocalVariablesResponse,
-  PostVariablesRequestBody,
-  PostVariablesResponse,
-} from '@figma/rest-api-spec'
+  GetProjectFilesResponse,
+} from "@figma/rest-api-spec";
 
 export default class FigmaApi {
-  private baseUrl = 'https://api.figma.com'
-  private token: string
+  private baseUrl = "https://api.figma.com";
+  private token: string;
 
   constructor(token: string) {
-    this.token = token
+    this.token = token;
+  }
+
+  async getProjectFiles(projectKey: string) {
+    const resp = await axios.request<GetProjectFilesResponse>({
+      url: `${this.baseUrl}/v1/projects/${projectKey}/files`,
+      headers: {
+        Accept: "*/*",
+        "X-Figma-Token": this.token,
+      },
+    });
+
+    return resp.data;
   }
 
   async getLocalVariables(fileKey: string) {
     const resp = await axios.request<GetLocalVariablesResponse>({
       url: `${this.baseUrl}/v1/files/${fileKey}/variables/local`,
       headers: {
-        Accept: '*/*',
-        'X-Figma-Token': this.token,
+        Accept: "*/*",
+        "X-Figma-Token": this.token,
       },
-    })
+    });
 
-    return resp.data
-  }
-
-  async postVariables(fileKey: string, payload: PostVariablesRequestBody) {
-    const resp = await axios.request<PostVariablesResponse>({
-      url: `${this.baseUrl}/v1/files/${fileKey}/variables`,
-      method: 'POST',
-      headers: {
-        Accept: '*/*',
-        'X-Figma-Token': this.token,
-      },
-      data: payload,
-    })
-
-    return resp.data
+    return resp.data;
   }
 }

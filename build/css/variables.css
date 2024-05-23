@@ -1,0 +1,44 @@
+/**
+ * Do not edit directly, this file was auto-generated.
+ */
+
+:root {
+  --icons-size-large: 16px;
+  --icons-size-small: 16px;
+  --dimensions-180: 18;
+  --dimensions-160: 16;
+  --dimensions-80: 8;
+  --dimensions-40: 4;
+  --dimensions-10: 1;
+  --color-blue-500: #0000ff;
+  --color-yellow-500: #ffff00;
+  --color-red-500: #ff0000;
+  --color-neutral-black: #000000;
+  --color-neutral-white: #ffffff;
+  --font-sans: lora;
+  --font-sans-serif: Inter;
+  --corner-large: var(--dimensions-80);
+  --corner-medium: var(--dimensions-40);
+  --corner-small: var(--dimensions-10);
+  --spacing-large: var(--dimensions-80);
+  --spacing-medium: var(--dimensions-40);
+  --spacing-small: var(--dimensions-10);
+  --typo-size-large: var(--dimensions-180);
+  --typo-size-medium: var(--dimensions-160);
+  --typo-size-small: var(--dimensions-80);
+  --typo-font-heading: var(--font-sans);
+  --typo-font-default: var(--font-sans-serif);
+  --color-icon-on-action: var(--color-neutral-white);
+  --color-text-on-action: var(--color-neutral-white);
+  --color-action-primary: var(--color-red-500);
+  --button-filled-default-icon-size: var(--icons-size-small);
+  --button-filled-default-icon: var(--color-icon-on-action);
+  --button-filled-default-padding-ver: var(--spacing-medium);
+  --button-filled-default-padding-hor: var(--spacing-large);
+  --button-filled-default-gap: var(--spacing-medium);
+  --button-filled-default-corner-radius: var(--corner-medium);
+  --button-filled-default-text-color: var(--color-text-on-action);
+  --button-filled-default-text-type: var(--typo-font-default);
+  --button-filled-default-text-size: var(--typo-size-small);
+  --button-filled-default-background: var(--color-action-primary);
+}

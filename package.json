@@ -3,18 +3,21 @@
   "type": "module",
   "scripts": {
     "sync-figma-to-tokens": "ts-node-esm -P tsconfig.json src/sync_figma_to_tokens.ts",
-    "build": "style-dictionary build"
+    "build": "style-dictionary build --verbose",
+    "local:run-workflow": "npm run sync-figma-to-tokens -- --output tokens && bash scripts/removedollarsigns.sh && npm run build",
+    "cleanup": "bash scripts/cleanup.sh"
   },
   "dependencies": {
     "axios": "^1.7.0",
     "dotenv": "^16.4.5",
+    "style-dictionary": "amzn/style-dictionary#v4",
     "ts-node": "^10.9.2",
-    "typescript": "^5.4.5",
-    "style-dictionary": "^3.9.2"
+    "typescript": "^5.4.5"
   },
   "devDependencies": {
     "@figma/rest-api-spec": "^0.13.0",
     "@types/node": "^20.12.12",
+    "@zip.js/zip.js": "^2.7.44",
     "eslint": "^9.3.0"
   }
 }

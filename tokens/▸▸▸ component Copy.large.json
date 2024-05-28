@@ -1,0 +1,170 @@
+{
+  "backdrop": {
+    "background": {
+      "type": "color",
+      "value": "{color.background.base.backdrop}",
+      "description": "",
+      "extensions": {
+        "com.figma": {
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "codeSyntax": {}
+        }
+      }
+    }
+  },
+  "skeleton-loader": {
+    "background": {
+      "type": "color",
+      "value": "{color.background.base.transparent}",
+      "description": "",
+      "extensions": {
+        "com.figma": {
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "ALL_SCOPES"
+          ],
+          "codeSyntax": {}
+        }
+      }
+    }
+  },
+  "input": {
+    "drop-zone": {
+      "default": {
+        "background": {
+          "type": "color",
+          "value": "{color.background.base.default}",
+          "description": "",
+          "extensions": {
+            "com.figma": {
+              "hiddenFromPublishing": false,
+              "scopes": [
+                "SHAPE_FILL",
+                "FRAME_FILL"
+              ],
+              "codeSyntax": {}
+            }
+          }
+        },
+        "border": {
+          "type": "color",
+          "value": "{color.border.default}",
+          "description": "",
+          "extensions": {
+            "com.figma": {
+              "hiddenFromPublishing": false,
+              "scopes": [
+                "STROKE_COLOR"
+              ],
+              "codeSyntax": {}
+            }
+          }
+        },
+        "border-radius": {
+          "type": "number",
+          "value": "{radius.small}",
+          "description": "",
+          "extensions": {
+            "com.figma": {
+              "hiddenFromPublishing": false,
+              "scopes": [
+                "CORNER_RADIUS"
+              ],
+              "codeSyntax": {}
+            }
+          }
+        },
+        "border-width": {
+          "type": "number",
+          "value": "{border.default}",
+          "description": "",
+          "extensions": {
+            "com.figma": {
+              "hiddenFromPublishing": false,
+              "scopes": [
+                "STROKE_FLOAT"
+              ],
+              "codeSyntax": {}
+            }
+          }
+        },
+        "text": {
+          "type": "color",
+          "value": "{color.text.base.weak}",
+          "description": "",
+          "extensions": {
+            "com.figma": {
+              "hiddenFromPublishing": false,
+              "scopes": [
+                "ALL_SCOPES"
+              ],
+              "codeSyntax": {}
+            }
+          }
+        }
+      },
+      "active": {
+        "background": {
+          "type": "color",
+          "value": "{color.background.base.highlight}",
+          "description": "",
+          "extensions": {
+            "com.figma": {
+              "hiddenFromPublishing": false,
+              "scopes": [
+                "SHAPE_FILL",
+                "FRAME_FILL"
+              ],
+              "codeSyntax": {}
+            }
+          }
+        },
+        "border": {
+          "type": "color",
+          "value": "{color.border.selection}",
+          "description": "",
+          "extensions": {
+            "com.figma": {
+              "hiddenFromPublishing": false,
+              "scopes": [
+                "STROKE_COLOR"
+              ],
+              "codeSyntax": {}
+            }
+          }
+        },
+        "border-width": {
+          "type": "number",
+          "value": "{border.bold}",
+          "description": "",
+          "extensions": {
+            "com.figma": {
+              "hiddenFromPublishing": false,
+              "scopes": [
+                "ALL_SCOPES"
+              ],
+              "codeSyntax": {}
+            }
+          }
+        },
+        "text": {
+          "type": "color",
+          "value": "{color.text.link.default}",
+          "description": "",
+          "extensions": {
+            "com.figma": {
+              "hiddenFromPublishing": false,
+              "scopes": [
+                "ALL_SCOPES"
+              ],
+              "codeSyntax": {}
+            }
+          }
+        }
+      }
+    }
+  }
+}

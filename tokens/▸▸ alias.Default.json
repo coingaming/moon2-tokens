@@ -1,0 +1,1304 @@
+{
+  "color": {
+    "background": {
+      "base": {
+        "default": {
+          "type": "color",
+          "value": "{color.neutral.white}",
+          "description": "Default background color for the whole app.",
+          "extensions": {
+            "com.figma": {
+              "hiddenFromPublishing": false,
+              "scopes": [],
+              "codeSyntax": {}
+            }
+          }
+        },
+        "brand": {
+          "type": "color",
+          "value": "{color.blue.500}",
+          "description": "",
+          "extensions": {
+            "com.figma": {
+              "hiddenFromPublishing": false,
+              "scopes": [
+                "ALL_SCOPES"
+              ],
+              "codeSyntax": {}
+            }
+          }
+        },
+        "alt": {
+          "type": "color",
+          "value": "{color.neutral.50}",
+          "description": "Second default background color for the app.",
+          "extensions": {
+            "com.figma": {
+              "hiddenFromPublishing": false,
+              "scopes": [
+                "ALL_SCOPES"
+              ],
+              "codeSyntax": {}
+            }
+          }
+        },
+        "highlight": {
+          "type": "color",
+          "value": "{color.blue.50}",
+          "description": "Background color for highlighting UI elements.",
+          "extensions": {
+            "com.figma": {
+              "hiddenFromPublishing": false,
+              "scopes": [
+                "ALL_SCOPES"
+              ],
+              "codeSyntax": {}
+            }
+          }
+        },
+        "info": {
+          "type": "color",
+          "value": "{color.neutral.500}",
+          "description": "Background color for UI elements related to providing neutral information (not error, success, or warning).",
+          "extensions": {
+            "com.figma": {
+              "hiddenFromPublishing": false,
+              "scopes": [
+                "ALL_SCOPES"
+              ],
+              "codeSyntax": {}
+            }
+          }
+        },
+        "error": {
+          "type": "color",
+          "value": "{color.red.600}",
+          "description": "Color for UI elements related to errors.",
+          "extensions": {
+            "com.figma": {
+              "hiddenFromPublishing": false,
+              "scopes": [
+                "ALL_SCOPES"
+              ],
+              "codeSyntax": {}
+            }
+          }
+        },
+        "success": {
+          "type": "color",
+          "value": "{color.green.500}",
+          "description": "Color for UI elements that have to do with success.",
+          "extensions": {
+            "com.figma": {
+              "hiddenFromPublishing": false,
+              "scopes": [
+                "ALL_SCOPES"
+              ],
+              "codeSyntax": {}
+            }
+          }
+        },
+        "warning": {
+          "type": "color",
+          "value": "{color.yellow.800}",
+          "description": "Color for UI elements that have to do with warning.",
+          "extensions": {
+            "com.figma": {
+              "hiddenFromPublishing": false,
+              "scopes": [
+                "ALL_SCOPES"
+              ],
+              "codeSyntax": {}
+            }
+          }
+        },
+        "backdrop": {
+          "type": "color",
+          "value": "{color.alpha.blue.light.100}",
+          "description": "The color of the mask overlay that appears when you enter a modal state.",
+          "extensions": {
+            "com.figma": {
+              "hiddenFromPublishing": false,
+              "scopes": [],
+              "codeSyntax": {}
+            }
+          }
+        },
+        "transparent": {
+          "type": "color",
+          "value": "{color.alpha.neutral.light.100}",
+          "description": "",
+          "extensions": {
+            "com.figma": {
+              "hiddenFromPublishing": false,
+              "scopes": [],
+              "codeSyntax": {}
+            }
+          }
+        }
+      },
+      "action": {
+        "primary": {
+          "default": {
+            "type": "color",
+            "value": "{color.blue.500}",
+            "description": "Our product brand blue.",
+            "extensions": {
+              "com.figma": {
+                "hiddenFromPublishing": false,
+                "scopes": [
+                  "ALL_SCOPES"
+                ],
+                "codeSyntax": {}
+              }
+            }
+          },
+          "hover": {
+            "type": "color",
+            "value": "{color.blue.700}",
+            "description": "Our product brand blue.",
+            "extensions": {
+              "com.figma": {
+                "hiddenFromPublishing": false,
+                "scopes": [
+                  "ALL_SCOPES"
+                ],
+                "codeSyntax": {}
+              }
+            }
+          },
+          "focus": {
+            "type": "color",
+            "value": "{color.blue.700}",
+            "description": "Our product brand blue.",
+            "extensions": {
+              "com.figma": {
+                "hiddenFromPublishing": false,
+                "scopes": [
+                  "ALL_SCOPES"
+                ],
+                "codeSyntax": {}
+              }
+            }
+          }
+        },
+        "secondary": {
+          "default": {
+            "type": "color",
+            "value": "{color.neutral.white}",
+            "description": "Our product brand blue.",
+            "extensions": {
+              "com.figma": {
+                "hiddenFromPublishing": false,
+                "scopes": [
+                  "ALL_SCOPES"
+                ],
+                "codeSyntax": {}
+              }
+            }
+          },
+          "hover": {
+            "type": "color",
+            "value": "{color.blue.50}",
+            "description": "Our product brand blue.",
+            "extensions": {
+              "com.figma": {
+                "hiddenFromPublishing": false,
+                "scopes": [
+                  "ALL_SCOPES"
+                ],
+                "codeSyntax": {}
+              }
+            }
+          },
+          "focus": {
+            "type": "color",
+            "value": "{color.blue.50}",
+            "description": "Our product brand blue.",
+            "extensions": {
+              "com.figma": {
+                "hiddenFromPublishing": false,
+                "scopes": [
+                  "ALL_SCOPES"
+                ],
+                "codeSyntax": {}
+              }
+            }
+          }
+        },
+        "tertiary": {
+          "default": {
+            "type": "color",
+            "value": "{color.neutral.white}",
+            "description": "Our product brand blue.",
+            "extensions": {
+              "com.figma": {
+                "hiddenFromPublishing": false,
+                "scopes": [
+                  "ALL_SCOPES"
+                ],
+                "codeSyntax": {}
+              }
+            }
+          },
+          "hover": {
+            "type": "color",
+            "value": "{color.blue.100}",
+            "description": "Our product brand blue.",
+            "extensions": {
+              "com.figma": {
+                "hiddenFromPublishing": false,
+                "scopes": [
+                  "ALL_SCOPES"
+                ],
+                "codeSyntax": {}
+              }
+            }
+          },
+          "focus": {
+            "type": "color",
+            "value": "{color.blue.100}",
+            "description": "Our product brand blue.",
+            "extensions": {
+              "com.figma": {
+                "hiddenFromPublishing": false,
+                "scopes": [
+                  "ALL_SCOPES"
+                ],
+                "codeSyntax": {}
+              }
+            }
+          }
+        },
+        "destructive": {
+          "default": {
+            "type": "color",
+            "value": "{color.red.600}",
+            "description": "Our product brand blue.",
+            "extensions": {
+              "com.figma": {
+                "hiddenFromPublishing": false,
+                "scopes": [
+                  "ALL_SCOPES"
+                ],
+                "codeSyntax": {}
+              }
+            }
+          },
+          "hover": {
+            "type": "color",
+            "value": "{color.red.800}",
+            "description": "Our product brand blue.",
+            "extensions": {
+              "com.figma": {
+                "hiddenFromPublishing": false,
+                "scopes": [
+                  "ALL_SCOPES"
+                ],
+                "codeSyntax": {}
+              }
+            }
+          },
+          "focus": {
+            "type": "color",
+            "value": "{color.red.800}",
+            "description": "Our product brand blue.",
+            "extensions": {
+              "com.figma": {
+                "hiddenFromPublishing": false,
+                "scopes": [
+                  "ALL_SCOPES"
+                ],
+                "codeSyntax": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    "border": {
+      "default": {
+        "type": "color",
+        "value": "{color.neutral.200}",
+        "description": "Default border color for UI elements.",
+        "extensions": {
+          "com.figma": {
+            "hiddenFromPublishing": false,
+            "scopes": [],
+            "codeSyntax": {}
+          }
+        }
+      },
+      "brand": {
+        "type": "color",
+        "value": "{color.blue.500}",
+        "description": "Our product brand blue.",
+        "extensions": {
+          "com.figma": {
+            "hiddenFromPublishing": false,
+            "scopes": [],
+            "codeSyntax": {}
+          }
+        }
+      },
+      "selection": {
+        "type": "color",
+        "value": "{color.blue.300}",
+        "description": "Used to delineate the boundary of a selected component.",
+        "extensions": {
+          "com.figma": {
+            "hiddenFromPublishing": false,
+            "scopes": [],
+            "codeSyntax": {}
+          }
+        }
+      },
+      "error": {
+        "type": "color",
+        "value": "{color.red.600}",
+        "description": "Border color for UI elements that have to do with errors.",
+        "extensions": {
+          "com.figma": {
+            "hiddenFromPublishing": false,
+            "scopes": [
+              "ALL_SCOPES"
+            ],
+            "codeSyntax": {}
+          }
+        }
+      },
+      "separator": {
+        "type": "color",
+        "value": "{color.neutral.100}",
+        "description": "Separator color - used as default separator on white backgrounds.",
+        "extensions": {
+          "com.figma": {
+            "hiddenFromPublishing": false,
+            "scopes": [
+              "ALL_SCOPES"
+            ],
+            "codeSyntax": {}
+          }
+        }
+      },
+      "success": {
+        "type": "color",
+        "value": "{color.green.500}",
+        "description": "Border color for UI elements that have to do with success.",
+        "extensions": {
+          "com.figma": {
+            "hiddenFromPublishing": false,
+            "scopes": [
+              "ALL_SCOPES"
+            ],
+            "codeSyntax": {}
+          }
+        }
+      },
+      "warning": {
+        "type": "color",
+        "value": "{color.yellow.800}",
+        "description": "Border color for UI elements that have to do with warnings.",
+        "extensions": {
+          "com.figma": {
+            "hiddenFromPublishing": false,
+            "scopes": [
+              "ALL_SCOPES"
+            ],
+            "codeSyntax": {}
+          }
+        }
+      }
+    },
+    "icon": {
+      "action": {
+        "primary": {
+          "default": {
+            "type": "color",
+            "value": "{color.neutral.white}",
+            "description": "",
+            "extensions": {
+              "com.figma": {
+                "hiddenFromPublishing": false,
+                "scopes": [
+                  "ALL_SCOPES"
+                ],
+                "codeSyntax": {}
+              }
+            }
+          }
+        }
+      },
+      "base": {
+        "default": {
+          "type": "color",
+          "value": "{color.neutral.black}",
+          "description": "",
+          "extensions": {
+            "com.figma": {
+              "hiddenFromPublishing": false,
+              "scopes": [
+                "ALL_SCOPES"
+              ],
+              "codeSyntax": {}
+            }
+          }
+        },
+        "brand": {
+          "type": "color",
+          "value": "{color.blue.500}",
+          "description": "",
+          "extensions": {
+            "com.figma": {
+              "hiddenFromPublishing": false,
+              "scopes": [
+                "ALL_SCOPES"
+              ],
+              "codeSyntax": {}
+            }
+          }
+        },
+        "inverse": {
+          "type": "color",
+          "value": "{color.neutral.white}",
+          "description": "",
+          "extensions": {
+            "com.figma": {
+              "hiddenFromPublishing": false,
+              "scopes": [
+                "ALL_SCOPES"
+              ],
+              "codeSyntax": {}
+            }
+          }
+        },
+        "error": {
+          "type": "color",
+          "value": "{color.red.600}",
+          "description": "",
+          "extensions": {
+            "com.figma": {
+              "hiddenFromPublishing": false,
+              "scopes": [
+                "ALL_SCOPES"
+              ],
+              "codeSyntax": {}
+            }
+          }
+        },
+        "disabled": {
+          "type": "color",
+          "value": "{color.neutral.400}",
+          "description": "",
+          "extensions": {
+            "com.figma": {
+              "hiddenFromPublishing": false,
+              "scopes": [
+                "ALL_SCOPES"
+              ],
+              "codeSyntax": {}
+            }
+          }
+        },
+        "label": {
+          "type": "color",
+          "value": "{color.neutral.700}",
+          "description": "",
+          "extensions": {
+            "com.figma": {
+              "hiddenFromPublishing": false,
+              "scopes": [
+                "ALL_SCOPES"
+              ],
+              "codeSyntax": {}
+            }
+          }
+        },
+        "weak": {
+          "type": "color",
+          "value": "{color.neutral.500}",
+          "description": "",
+          "extensions": {
+            "com.figma": {
+              "hiddenFromPublishing": false,
+              "scopes": [
+                "ALL_SCOPES"
+              ],
+              "codeSyntax": {}
+            }
+          }
+        },
+        "placeholder": {
+          "type": "color",
+          "value": "{color.neutral.500}",
+          "description": "",
+          "extensions": {
+            "com.figma": {
+              "hiddenFromPublishing": false,
+              "scopes": [
+                "ALL_SCOPES"
+              ],
+              "codeSyntax": {}
+            }
+          }
+        },
+        "required": {
+          "type": "color",
+          "value": "{color.red.600}",
+          "description": "",
+          "extensions": {
+            "com.figma": {
+              "hiddenFromPublishing": false,
+              "scopes": [
+                "ALL_SCOPES"
+              ],
+              "codeSyntax": {}
+            }
+          }
+        },
+        "success": {
+          "type": "color",
+          "value": "{color.green.500}",
+          "description": "",
+          "extensions": {
+            "com.figma": {
+              "hiddenFromPublishing": false,
+              "scopes": [
+                "ALL_SCOPES"
+              ],
+              "codeSyntax": {}
+            }
+          }
+        }
+      }
+    },
+    "text": {
+      "base": {
+        "default": {
+          "type": "color",
+          "value": "{color.neutral.black}",
+          "description": "Body text color",
+          "extensions": {
+            "com.figma": {
+              "hiddenFromPublishing": false,
+              "scopes": [
+                "ALL_SCOPES"
+              ],
+              "codeSyntax": {}
+            }
+          }
+        },
+        "brand": {
+          "type": "color",
+          "value": "{color.blue.500}",
+          "description": "Our product brand blue.",
+          "extensions": {
+            "com.figma": {
+              "hiddenFromPublishing": false,
+              "scopes": [
+                "ALL_SCOPES"
+              ],
+              "codeSyntax": {}
+            }
+          }
+        },
+        "inverse": {
+          "type": "color",
+          "value": "{color.neutral.white}",
+          "description": "Inverse text color for dark backgrounds",
+          "extensions": {
+            "com.figma": {
+              "hiddenFromPublishing": false,
+              "scopes": [
+                "ALL_SCOPES"
+              ],
+              "codeSyntax": {}
+            }
+          }
+        },
+        "error": {
+          "type": "color",
+          "value": "{color.red.600}",
+          "description": "Error text for inputs and error misc",
+          "extensions": {
+            "com.figma": {
+              "hiddenFromPublishing": false,
+              "scopes": [
+                "ALL_SCOPES"
+              ],
+              "codeSyntax": {}
+            }
+          }
+        },
+        "disabled": {
+          "type": "color",
+          "value": "{color.neutral.400}",
+          "description": "",
+          "extensions": {
+            "com.figma": {
+              "hiddenFromPublishing": false,
+              "scopes": [
+                "ALL_SCOPES"
+              ],
+              "codeSyntax": {}
+            }
+          }
+        },
+        "label": {
+          "type": "color",
+          "value": "{color.neutral.700}",
+          "description": "Text color for field labels.",
+          "extensions": {
+            "com.figma": {
+              "hiddenFromPublishing": false,
+              "scopes": [
+                "ALL_SCOPES"
+              ],
+              "codeSyntax": {}
+            }
+          }
+        },
+        "weak": {
+          "type": "color",
+          "value": "{color.neutral.500}",
+          "description": "Color for text that is purposefully de-emphasized to create visual hierarchy.",
+          "extensions": {
+            "com.figma": {
+              "hiddenFromPublishing": false,
+              "scopes": [
+                "ALL_SCOPES"
+              ],
+              "codeSyntax": {}
+            }
+          }
+        },
+        "placeholder": {
+          "type": "color",
+          "value": "{color.neutral.500}",
+          "description": "Input placeholder text.",
+          "extensions": {
+            "com.figma": {
+              "hiddenFromPublishing": false,
+              "scopes": [
+                "ALL_SCOPES"
+              ],
+              "codeSyntax": {}
+            }
+          }
+        },
+        "required": {
+          "type": "color",
+          "value": "{color.red.600}",
+          "description": "Color of required field marker.",
+          "extensions": {
+            "com.figma": {
+              "hiddenFromPublishing": false,
+              "scopes": [
+                "ALL_SCOPES"
+              ],
+              "codeSyntax": {}
+            }
+          }
+        },
+        "success": {
+          "type": "color",
+          "value": "{color.green.500}",
+          "description": "Text color for success text.",
+          "extensions": {
+            "com.figma": {
+              "hiddenFromPublishing": false,
+              "scopes": [
+                "ALL_SCOPES"
+              ],
+              "codeSyntax": {}
+            }
+          }
+        }
+      },
+      "action": {
+        "primary": {
+          "default": {
+            "type": "color",
+            "value": "{color.neutral.white}",
+            "description": "Text color found on any primary brand color",
+            "extensions": {
+              "com.figma": {
+                "hiddenFromPublishing": false,
+                "scopes": [
+                  "ALL_SCOPES"
+                ],
+                "codeSyntax": {}
+              }
+            }
+          }
+        },
+        "secondary": {
+          "default": {
+            "type": "color",
+            "value": "{color.neutral.white}",
+            "description": "Text color found on any primary brand color",
+            "extensions": {
+              "com.figma": {
+                "hiddenFromPublishing": false,
+                "scopes": [
+                  "ALL_SCOPES"
+                ],
+                "codeSyntax": {}
+              }
+            }
+          }
+        },
+        "tertiary": {
+          "default": {
+            "type": "color",
+            "value": "{color.neutral.white}",
+            "description": "Text color found on any primary brand color",
+            "extensions": {
+              "com.figma": {
+                "hiddenFromPublishing": false,
+                "scopes": [
+                  "ALL_SCOPES"
+                ],
+                "codeSyntax": {}
+              }
+            }
+          }
+        },
+        "destructive": {
+          "default": {
+            "type": "color",
+            "value": "{color.neutral.white}",
+            "description": "Text color found on any primary brand color",
+            "extensions": {
+              "com.figma": {
+                "hiddenFromPublishing": false,
+                "scopes": [
+                  "ALL_SCOPES"
+                ],
+                "codeSyntax": {}
+              }
+            }
+          }
+        }
+      },
+      "link": {
+        "default": {
+          "type": "color",
+          "value": "{color.blue.500}",
+          "description": "Link text",
+          "extensions": {
+            "com.figma": {
+              "hiddenFromPublishing": false,
+              "scopes": [
+                "ALL_SCOPES"
+              ],
+              "codeSyntax": {}
+            }
+          }
+        },
+        "active": {
+          "type": "color",
+          "value": "#ffffff",
+          "description": "Active link text",
+          "extensions": {
+            "com.figma": {
+              "hiddenFromPublishing": false,
+              "scopes": [
+                "ALL_SCOPES"
+              ],
+              "codeSyntax": {}
+            }
+          }
+        },
+        "disabled": {
+          "type": "color",
+          "value": "#ffffff",
+          "description": "Disabled link text",
+          "extensions": {
+            "com.figma": {
+              "hiddenFromPublishing": false,
+              "scopes": [
+                "ALL_SCOPES"
+              ],
+              "codeSyntax": {}
+            }
+          }
+        },
+        "hover": {
+          "type": "color",
+          "value": "#ffffff",
+          "description": "Hover link text",
+          "extensions": {
+            "com.figma": {
+              "hiddenFromPublishing": false,
+              "scopes": [
+                "ALL_SCOPES"
+              ],
+              "codeSyntax": {}
+            }
+          }
+        }
+      }
+    }
+  },
+  "font": {
+    "family": {
+      "default": {
+        "type": "string",
+        "value": "{font-family.dm-sans}",
+        "description": "",
+        "extensions": {
+          "com.figma": {
+            "hiddenFromPublishing": false,
+            "scopes": [
+              "ALL_SCOPES"
+            ],
+            "codeSyntax": {}
+          }
+        }
+      },
+      "heading": {
+        "type": "string",
+        "value": "{font-family.space-grotesk}",
+        "description": "",
+        "extensions": {
+          "com.figma": {
+            "hiddenFromPublishing": false,
+            "scopes": [
+              "ALL_SCOPES"
+            ],
+            "codeSyntax": {}
+          }
+        }
+      }
+    },
+    "size": {
+      "heading": {
+        "x-small": {
+          "type": "number",
+          "value": "{size.140}",
+          "description": "",
+          "extensions": {
+            "com.figma": {
+              "hiddenFromPublishing": false,
+              "scopes": [
+                "TEXT_CONTENT"
+              ],
+              "codeSyntax": {}
+            }
+          }
+        },
+        "small": {
+          "type": "number",
+          "value": "{size.160}",
+          "description": "",
+          "extensions": {
+            "com.figma": {
+              "hiddenFromPublishing": false,
+              "scopes": [
+                "TEXT_CONTENT"
+              ],
+              "codeSyntax": {}
+            }
+          }
+        },
+        "medium": {
+          "type": "number",
+          "value": "{size.180}",
+          "description": "",
+          "extensions": {
+            "com.figma": {
+              "hiddenFromPublishing": false,
+              "scopes": [
+                "TEXT_CONTENT"
+              ],
+              "codeSyntax": {}
+            }
+          }
+        },
+        "large": {
+          "type": "number",
+          "value": "{size.200}",
+          "description": "",
+          "extensions": {
+            "com.figma": {
+              "hiddenFromPublishing": false,
+              "scopes": [
+                "TEXT_CONTENT"
+              ],
+              "codeSyntax": {}
+            }
+          }
+        },
+        "x-large": {
+          "type": "number",
+          "value": "{size.240}",
+          "description": "",
+          "extensions": {
+            "com.figma": {
+              "hiddenFromPublishing": false,
+              "scopes": [
+                "TEXT_CONTENT"
+              ],
+              "codeSyntax": {}
+            }
+          }
+        }
+      },
+      "body": {
+        "small": {
+          "type": "number",
+          "value": "{size.120}",
+          "description": "",
+          "extensions": {
+            "com.figma": {
+              "hiddenFromPublishing": false,
+              "scopes": [
+                "TEXT_CONTENT"
+              ],
+              "codeSyntax": {}
+            }
+          }
+        },
+        "medium": {
+          "type": "number",
+          "value": "{size.140}",
+          "description": "",
+          "extensions": {
+            "com.figma": {
+              "hiddenFromPublishing": false,
+              "scopes": [
+                "TEXT_CONTENT"
+              ],
+              "codeSyntax": {}
+            }
+          }
+        },
+        "large": {
+          "type": "number",
+          "value": "{size.160}",
+          "description": "",
+          "extensions": {
+            "com.figma": {
+              "hiddenFromPublishing": false,
+              "scopes": [
+                "TEXT_CONTENT"
+              ],
+              "codeSyntax": {}
+            }
+          }
+        }
+      }
+    },
+    "line-height": {
+      "x-small": {
+        "type": "number",
+        "value": "{size.160}",
+        "description": "",
+        "extensions": {
+          "com.figma": {
+            "hiddenFromPublishing": false,
+            "scopes": [
+              "ALL_SCOPES"
+            ],
+            "codeSyntax": {}
+          }
+        }
+      },
+      "small": {
+        "type": "number",
+        "value": "{size.200}",
+        "description": "",
+        "extensions": {
+          "com.figma": {
+            "hiddenFromPublishing": false,
+            "scopes": [
+              "ALL_SCOPES"
+            ],
+            "codeSyntax": {}
+          }
+        }
+      },
+      "medium": {
+        "type": "number",
+        "value": "{size.240}",
+        "description": "",
+        "extensions": {
+          "com.figma": {
+            "hiddenFromPublishing": false,
+            "scopes": [
+              "ALL_SCOPES"
+            ],
+            "codeSyntax": {}
+          }
+        }
+      }
+    },
+    "weight": {
+      "default": {
+        "type": "string",
+        "value": "{font-weight.regular}",
+        "description": "",
+        "extensions": {
+          "com.figma": {
+            "hiddenFromPublishing": false,
+            "scopes": [
+              "ALL_SCOPES"
+            ],
+            "codeSyntax": {}
+          }
+        }
+      },
+      "medium": {
+        "type": "string",
+        "value": "{font-weight.medium}",
+        "description": "",
+        "extensions": {
+          "com.figma": {
+            "hiddenFromPublishing": false,
+            "scopes": [
+              "ALL_SCOPES"
+            ],
+            "codeSyntax": {}
+          }
+        }
+      },
+      "bold": {
+        "type": "string",
+        "value": "{font-weight.bold}",
+        "description": "",
+        "extensions": {
+          "com.figma": {
+            "hiddenFromPublishing": false,
+            "scopes": [
+              "ALL_SCOPES"
+            ],
+            "codeSyntax": {}
+          }
+        }
+      }
+    }
+  },
+  "radius": {
+    "x-small": {
+      "type": "number",
+      "value": "{size.40}",
+      "description": "",
+      "extensions": {
+        "com.figma": {
+          "hiddenFromPublishing": false,
+          "scopes": [],
+          "codeSyntax": {}
+        }
+      }
+    },
+    "small": {
+      "type": "number",
+      "value": "{size.80}",
+      "description": "",
+      "extensions": {
+        "com.figma": {
+          "hiddenFromPublishing": false,
+          "scopes": [],
+          "codeSyntax": {}
+        }
+      }
+    },
+    "medium": {
+      "type": "number",
+      "value": "{size.120}",
+      "description": "",
+      "extensions": {
+        "com.figma": {
+          "hiddenFromPublishing": false,
+          "scopes": [],
+          "codeSyntax": {}
+        }
+      }
+    },
+    "large": {
+      "type": "number",
+      "value": "{size.160}",
+      "description": "",
+      "extensions": {
+        "com.figma": {
+          "hiddenFromPublishing": false,
+          "scopes": [],
+          "codeSyntax": {}
+        }
+      }
+    },
+    "x-large": {
+      "type": "number",
+      "value": "{size.240}",
+      "description": "",
+      "extensions": {
+        "com.figma": {
+          "hiddenFromPublishing": false,
+          "scopes": [],
+          "codeSyntax": {}
+        }
+      }
+    },
+    "circle": {
+      "type": "number",
+      "value": "{size.9000}",
+      "description": "",
+      "extensions": {
+        "com.figma": {
+          "hiddenFromPublishing": false,
+          "scopes": [],
+          "codeSyntax": {}
+        }
+      }
+    }
+  },
+  "border": {
+    "thin": {
+      "type": "number",
+      "value": "{size.5}",
+      "description": "",
+      "extensions": {
+        "com.figma": {
+          "hiddenFromPublishing": false,
+          "scopes": [],
+          "codeSyntax": {}
+        }
+      }
+    },
+    "default": {
+      "type": "number",
+      "value": "{size.10}",
+      "description": "",
+      "extensions": {
+        "com.figma": {
+          "hiddenFromPublishing": false,
+          "scopes": [],
+          "codeSyntax": {}
+        }
+      }
+    },
+    "bold": {
+      "type": "number",
+      "value": "{size.20}",
+      "description": "",
+      "extensions": {
+        "com.figma": {
+          "hiddenFromPublishing": false,
+          "scopes": [],
+          "codeSyntax": {}
+        }
+      }
+    }
+  },
+  "space": {
+    "xxx-small": {
+      "type": "number",
+      "value": "{size.20}",
+      "description": "",
+      "extensions": {
+        "com.figma": {
+          "hiddenFromPublishing": false,
+          "scopes": [],
+          "codeSyntax": {}
+        }
+      }
+    },
+    "xx-small": {
+      "type": "number",
+      "value": "{size.40}",
+      "description": "",
+      "extensions": {
+        "com.figma": {
+          "hiddenFromPublishing": false,
+          "scopes": [],
+          "codeSyntax": {}
+        }
+      }
+    },
+    "x-small": {
+      "type": "number",
+      "value": "{size.80}",
+      "description": "",
+      "extensions": {
+        "com.figma": {
+          "hiddenFromPublishing": false,
+          "scopes": [],
+          "codeSyntax": {}
+        }
+      }
+    },
+    "small": {
+      "type": "number",
+      "value": "{size.120}",
+      "description": "",
+      "extensions": {
+        "com.figma": {
+          "hiddenFromPublishing": false,
+          "scopes": [],
+          "codeSyntax": {}
+        }
+      }
+    },
+    "medium": {
+      "type": "number",
+      "value": "{size.160}",
+      "description": "",
+      "extensions": {
+        "com.figma": {
+          "hiddenFromPublishing": false,
+          "scopes": [],
+          "codeSyntax": {}
+        }
+      }
+    },
+    "large": {
+      "type": "number",
+      "value": "{size.200}",
+      "description": "",
+      "extensions": {
+        "com.figma": {
+          "hiddenFromPublishing": false,
+          "scopes": [],
+          "codeSyntax": {}
+        }
+      }
+    },
+    "x-large": {
+      "type": "number",
+      "value": "{size.240}",
+      "description": "",
+      "extensions": {
+        "com.figma": {
+          "hiddenFromPublishing": false,
+          "scopes": [],
+          "codeSyntax": {}
+        }
+      }
+    },
+    "xx-large": {
+      "type": "number",
+      "value": "{size.320}",
+      "description": "",
+      "extensions": {
+        "com.figma": {
+          "hiddenFromPublishing": false,
+          "scopes": [],
+          "codeSyntax": {}
+        }
+      }
+    },
+    "xxx-large": {
+      "type": "number",
+      "value": "{size.400}",
+      "description": "",
+      "extensions": {
+        "com.figma": {
+          "hiddenFromPublishing": false,
+          "scopes": [],
+          "codeSyntax": {}
+        }
+      }
+    }
+  }
+}

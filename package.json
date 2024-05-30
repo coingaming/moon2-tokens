@@ -2,9 +2,9 @@
   "name": "moon2-tokens",
   "type": "module",
   "scripts": {
-    "sync-figma-to-tokens": "ts-node-esm -P tsconfig.json src/sync_figma_to_tokens.ts",
+    "sync-figma-to-tokens": "node --loader ts-node/esm src/sync_figma_to_tokens.ts",
     "build": "style-dictionary build --verbose",
-    "local:run-workflow": "npm run sync-figma-to-tokens -- --output tokens && npm run build",
+    "local:run-workflow": "npm run cleanup && npm run sync-figma-to-tokens -- --output tokens && npm run build",
     "cleanup": "bash scripts/cleanup.sh"
   },
   "dependencies": {

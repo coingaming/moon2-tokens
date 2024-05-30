@@ -60,7 +60,7 @@
         },
         "height": {
           "$type": "number",
-          "$value": "{height.small}",
+          "$value": "{height.large}",
           "$description": "",
           "$extensions": {
             "com.figma": {

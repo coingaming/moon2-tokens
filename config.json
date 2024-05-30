@@ -9,7 +9,7 @@
       "transformGroup": "css",
       "files": [
         {
-          "destination": "variables.css",
+          "destination": "tokens.css",
           "format": "css/variables",
           "options": {
             "outputReferences": true

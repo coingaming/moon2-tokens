@@ -4,7 +4,7 @@
   "scripts": {
     "sync-figma-to-tokens": "ts-node-esm -P tsconfig.json src/sync_figma_to_tokens.ts",
     "build": "style-dictionary build --verbose",
-    "local:run-workflow": "npm run sync-figma-to-tokens -- --output tokens && bash scripts/removedollarsigns.sh && npm run build",
+    "local:run-workflow": "npm run sync-figma-to-tokens -- --output tokens && npm run build",
     "cleanup": "bash scripts/cleanup.sh"
   },
   "dependencies": {

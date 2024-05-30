@@ -15,21 +15,15 @@ jobs:
       pull-requests: write
     steps:
       - name: Install Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
-          node-version: '18.16.0'
-
-      - name: Set NPM version
-        run: npm install -g npm@9.5.1
+          node-version: 20
 
       - name: Clone repo
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Install dependencies
-        run: npm install
-
-      - name: Install Style Dictionary
-        run: npm install -g style-dictionary
+        run: npm i
 
       - name: Clear tokens directory
         run: bash scripts/cleanup.sh
@@ -47,7 +41,7 @@ jobs:
         run: npm run build
         
       - name: Create Pull Request
-        uses: peter-evans/create-pull-request@v5
+        uses: peter-evans/create-pull-request@v6
         with:
           commit-message: Update tokens from Figma
           title: Update tokens from Figma

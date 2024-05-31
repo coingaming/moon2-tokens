@@ -4,9 +4,8 @@
   ],
   "platforms": {
     "CSS": {
-      "buildPath": "build/css//",
-      "prefix": "",
-      "transformGroup": "css",
+      "buildPath": "build/css/",
+      "transformGroup": "custom/css",
       "files": [
         {
           "destination": "tokens.css",

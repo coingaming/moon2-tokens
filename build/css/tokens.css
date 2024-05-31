@@ -87,7 +87,7 @@
   --font-family-jetbrains-mono: JetBrains Mono;
   --height-large: var(--height-560);
   --height-medium: var(--height-400);
-  --height-small: var(--height-320);
+  --height-small: 32px;
   --height-560: 56;
   --height-400: 40;
   --height-320: 32;

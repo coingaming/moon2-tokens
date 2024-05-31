@@ -444,7 +444,7 @@
     },
     "small": {
       "$type": "number",
-      "$value": "{height.320}",
+      "$value": 32,
       "$description": "",
       "$extensions": {
         "com.figma": {

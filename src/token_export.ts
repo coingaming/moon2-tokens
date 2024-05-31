@@ -47,7 +47,9 @@ export function tokenFilesFromLocalVariables(
     // Skip remote variables because we only want to generate tokens for local variables
     if (variable.remote) {
       return;
-    }
+    } /* else if (variable.hiddenFromPublishing) {
+      return;
+    } */
 
     const collection = localVariableCollections[variable.variableCollectionId];
 

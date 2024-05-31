@@ -1,4 +1,4 @@
-name: Sync Figma variables to tokens (and code)
+name: Sync Figma variables to tokens and code
 on:
   workflow_dispatch:
     inputs:
@@ -34,7 +34,7 @@ jobs:
           PROJECT_KEY: ${{ github.event.inputs.project_key }}
           PERSONAL_ACCESS_TOKEN: ${{ secrets.FIGMA_PAT }}
   
-      - name: Build Style Dictionary (uses config.json to define src/dest)
+      - name: Build Style Dictionary
         run: npm run build
         
       - name: Create Pull Request

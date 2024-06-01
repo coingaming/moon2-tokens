@@ -307,7 +307,7 @@
     "contrast": {
       "default": {
         "$type": "color",
-        "$value": "{base.cyan.600}",
+        "$value": "{base.cyan.700}",
         "$description": "",
         "$extensions": {
           "com.figma": {
@@ -321,7 +321,7 @@
       },
       "alt": {
         "$type": "color",
-        "$value": "{base.cyan.700}",
+        "$value": "{base.cyan.600}",
         "$description": "",
         "$extensions": {
           "com.figma": {
@@ -509,7 +509,7 @@
       },
       "action": {
         "$type": "color",
-        "$value": "{primary.200}",
+        "$value": "{primary.100}",
         "$description": "",
         "$extensions": {
           "com.figma": {
